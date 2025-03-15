@@ -147,20 +147,6 @@ span:hover {
       height: 35%;
    }
 }
-@media (min-width: 769px) and (max-width: 1080px) {
-
-   .container > div {
-      width: 60%;
-   }
-
-   span {
-      font-size: 22px;
-   } 
-
-   p.answer {
-      font-size: 20px;
-   }
-}
 @media (min-width: 1080px) {
 
    .container > div {
