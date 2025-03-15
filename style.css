@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   --White: hsl(0, 0%, 100%);
+   --Light-pink: hsl(275, 100%, 97%);
+   --Grayish-purple: #aa2df5;
+   --Dark-purple: hsl(292, 42%, 14%);
+   --Font-size: 1rem;
+   --Family: "Work Sans", sans-serif;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--Light-pink);
+   font-family: var(--Family);
+   font-size: var(--Font-size);
+} 
+
+body > img {
+   max-width: 100%; 
+   height: auto; 
+   position: absolute;
+   z-index: -1;
+}
+
+.container {
+   max-width: 1200px; 
+   width: 90%; 
+   margin: 0 auto; 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container > div {
+   background-color: white;
+   padding: 2rem;
+   border-radius: 10px;
+   width: 50%;
+}
+
+.container > div div {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin: 1rem 0;
+   align-items: center;
+}
+
+h1 img {
+   margin-right: 0.5rem;
+   width: 2rem;
+   height: 2rem;
+}
+
+h1 {
+   display: flex;
+   align-items: center;
+}
+
+span {
+   font-weight: 600;
+}
+
+hr {
+   border: #f9f8fc 1px solid;
+}
+
+p.answer {
+   font-size: 0.80rem;
+   height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+   padding: 0;
+   -webkit-transition: height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+   -moz-transition: height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+   -ms-transition: height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+   -o-transition: height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+}
+
+p.answer.active {
+   opacity: 1;
+   height: auto; /* Height will be set dynamically in JavaScript */
+   padding: 10px 0;
+}
+
+span, img {
+   cursor: pointer;
+}
+
+span:hover {
+   color: var(--Grayish-purple);
+}
